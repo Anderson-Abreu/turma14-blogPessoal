@@ -59,7 +59,7 @@ export class InicioComponent implements OnInit {
       this.listaPostagens = resp
     })
   }
-
+ 
   findByIdUser(){
     this.authService.getByIdUser(this.idUser).subscribe((resp: User) => {
       this.user = resp
